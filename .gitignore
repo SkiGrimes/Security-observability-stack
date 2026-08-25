@@ -1,0 +1,29 @@
+# --- Secrets / env ---
+.env
+*.env
+*.local
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# --- Docker / stack runtime data (do NOT commit volumes) ---
+grafana/data/
+prometheus/data/
+*.db
+
+# --- k6 output ---
+*.json.gz
+summary.json
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
